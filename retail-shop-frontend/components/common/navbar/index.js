@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#00000050] backdrop-blur-sm p-4 flex items-center justify-between flex-wrap fixed w-full">
+    <nav className="bg-[#00000050] z-10 backdrop-blur-sm p-4 flex items-center justify-between flex-wrap fixed w-full">
       {/* Logo */}
       <div className="flex items-center flex-shrink-0 mr-6">
         <Link href="/">
@@ -56,13 +56,6 @@ const Navbar = () => {
         <ul className="flex flex-col md:flex-row justify-center md:flex-grow">
           <li>
             <div className="block text-white px-4 py-2 rounded cursor-pointer hover:underline">
-              <Link href="/running-out-products">
-                <span>Running Out Products</span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="block text-white px-4 py-2 rounded cursor-pointer hover:underline">
               <Link href="/all-products">
                 <span>All Products</span>
               </Link>
@@ -72,6 +65,13 @@ const Navbar = () => {
             <div className="block text-white px-4 py-2 rounded cursor-pointer hover:underline">
               <Link href="/add-products">
                 <span>Add Products</span>
+              </Link>
+            </div>
+          </li>
+          <li>
+            <div className="block text-white px-4 py-2 rounded cursor-pointer hover:underline">
+              <Link href="/running-out">
+                <span>Running Out</span>
               </Link>
             </div>
           </li>

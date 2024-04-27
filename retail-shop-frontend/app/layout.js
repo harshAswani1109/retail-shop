@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <div className="">
           <Navbar />
         </div>
-        <div className="h-screen overflow-y-auto px-10 py-24">{children}</div>
+        <div className="px-10 py-24">{children}</div>
         <div className="">
           <Footer />
         </div>
