@@ -10,10 +10,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-[#A49DEA]">
-        <Navbar />
-        {children}
-        <Footer />
+      <body className="bg-[#505050] h-full flex flex-col">
+        <div className="">
+          <Navbar />
+        </div>
+        <div className="h-screen overflow-y-auto px-10 py-24">{children}</div>
+        <div className="">
+          <Footer />
+        </div>
       </body>
     </html>
   );
