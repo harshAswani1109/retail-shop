@@ -26,8 +26,10 @@ export default function AllProducts() {
   const filteredProducts = products.filter((product) => product.quantity <= 50);
 
   return (
-    <section className="">
-      <h2 className="text-2xl text-white font-bold mb-4">All Products</h2>
+    <section className="h-screen">
+      <h2 className="text-2xl text-white font-bold mb-4">
+        Products Running Out
+      </h2>
       <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {/* Render the list of products */}
         {filteredProducts.map((product) => (

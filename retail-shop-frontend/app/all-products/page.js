@@ -96,7 +96,7 @@ export default function AllProducts() {
         {products.map((product) => (
           <div key={product.id} className="bg-white rounded-lg shadow-md p-4">
             <h3 className="text-lg font-semibold">{product.name}</h3>
-            <p className="text-gray-600">Quantity: {product.quantity}</p>
+            <p className="text-gray-600">Quantity: {product.quantity} kg</p>
             {/* Buttons for update and delete */}
             <div className="mt-4 flex space-x-4">
               <button

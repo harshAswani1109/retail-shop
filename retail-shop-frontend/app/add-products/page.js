@@ -31,47 +31,50 @@ export default function AddProducts() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md">
-      <h1 className="text-2xl font-semibold mb-4">Add Product</h1>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-4">
-          <label htmlFor="name" className="block text-gray-700">
-            Name:
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="form-input mt-1 block w-full h-10 px-2 border-1 border-[#505050]"
-            required
-          />
-        </div>
-        <div className="mb-4">
-          <label htmlFor="quantity" className="block text-gray-700">
-            Quantity: (In kg)
-          </label>
-          <input
-            type="number"
-            id="quantity"
-            name="quantity"
-            value={formData.quantity}
-            onChange={handleChange}
-            className="form-input mt-1 block w-full h-10 px-2 border-1 border-[#505050]"
-            required
-          />
-        </div>
-        <button
-          type="submit"
-          className="bg-[#505050] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Add Product
-        </button>
-      </form>
-      {responseMessage && (
-        <p className="text-red-500 mt-4">{responseMessage}</p>
-      )}
-    </div>
+    <section className="h-screen">
+      {" "}
+      <div className="bg-white p-8 rounded-lg shadow-md ">
+        <h1 className="text-2xl font-semibold mb-4">Add Product</h1>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-gray-700">
+              Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              className="form-input mt-1 block w-full h-10 px-2 border-1 border-[#505050]"
+              required
+            />
+          </div>
+          <div className="mb-4">
+            <label htmlFor="quantity" className="block text-gray-700">
+              Quantity: (In kg)
+            </label>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              value={formData.quantity}
+              onChange={handleChange}
+              className="form-input mt-1 block w-full h-10 px-2 border-1 border-[#505050]"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-[#505050] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Add Product
+          </button>
+        </form>
+        {responseMessage && (
+          <p className="text-red-500 mt-4">{responseMessage}</p>
+        )}
+      </div>
+    </section>
   );
 }
